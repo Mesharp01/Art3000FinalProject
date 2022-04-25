@@ -5,3 +5,11 @@ html, body {
 canvas {
   display: block;
 }
+
+p {
+  font-family: "Georgia", Times, serif;
+}
+
+h1 {
+  font-family: "Georgia", Times, serif;
+}
