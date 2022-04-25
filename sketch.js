@@ -264,7 +264,7 @@ function keyPressed(){
       sound2.stop();
       sound3.stop();
       sound4.stop();
-      //clear();
+      clear();
       sound1.loop();
       sound2.loop();
       sound3.loop();
