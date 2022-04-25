@@ -28,18 +28,6 @@ function preload(){
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-	
-    textSize(32);
-    textFont('Georgia');
-    textAlign(LEFT);
-    textStyle(BOLDITALIC);
-    text('Falling Water', 10, 30);
-    textStyle(NORMAL);
-    textSize(16);
-    text('Press anywhere on the screen to begin visualization.', 10, 60);
-    text('Press anywhere again to mute sounds.', 10, 80);
-    text('Press the backspace key to restart visualization.', 10, 100);
-	
     amp1 = new p5.Amplitude();
     amp1.setInput(sound1);
     amp2 = new p5.Amplitude();
@@ -53,6 +41,17 @@ function setup() {
 }
 
 function draw() {
+    textSize(32);
+    textFont('Georgia');
+    textAlign(LEFT);
+    textStyle(BOLDITALIC);
+    text('Falling Water', 10, 30);
+    textStyle(NORMAL);
+    textSize(16);
+    text('Press anywhere on the screen to begin visualization.', 10, 60);
+    text('Press anywhere again to mute sounds.', 10, 80);
+    text('Press the backspace key to restart visualization.', 10, 100);
+	
   let r1 = random(200);
   let level1 = amp1.getLevel();
   let sd1 = level1*r1;
